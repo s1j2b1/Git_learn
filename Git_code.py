@@ -122,6 +122,13 @@ committed            يعني: تم حفظ الملف رسميًا
 # مثل GitHupالرابط الي اعطاك اياه الـ
 # git remote add origin https://github.com/s1j2b1/Git_learn.git
 
+# رفع المشروع لأول مرة
+# git push -u origin main
+# المرات القادمة يكفي
+# git push
+
+
+
 
 
 # -------------------------------------------------------------------
