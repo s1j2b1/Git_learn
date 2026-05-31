@@ -148,7 +148,6 @@ Changes not staged
 # ولا يحذف التعديلات من الملف git add و الـ commit يحذف الـ
 # git reset --mixed HEAD~1 أو git reset HEAD~1
 # -- git revert --
-# سابق commit  لا يحذف التاريخ، بل ينشئ تعديل جديدًا من
 # المختار commit جديدًا من الـ commit بل ينشئ commit لا يحذف الـ 
 # git revert C
 
