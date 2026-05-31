@@ -64,6 +64,18 @@ committed            يعني: تم حفظ الملف رسميًا
 """
 # ==============================================================================
 
+""" كيف ارجع للنسخة القديمة """
+""" هل ممكن ادمج ملفات معينةgit add لكل ملف عدلته قبل عن انتقل لفرع ثاني و المشكلة لما اريد اعمل دمج تتغير كل الملفات الي معموللها git add هل لازم اعمل """
+""" 
+إذا رأيت:
+Modified
+Untracked
+Changes not staged
+
+فتأكد أنك تعرف ماذا ستفعل بها قبل المتابعة.
+اشرحلي
+"""
+""" اعطيني مثال اشوف الفرق git reset --mixed HEAD~1 و git reset --soft HEAD~1 ايش الفرق بين """
 
 
 # ==============================================================================
@@ -84,7 +96,14 @@ committed            يعني: تم حفظ الملف رسميًا
 # git config --global user.email "alalbah@gmail.com"
 
 # أضافة التعديلات و الملفات
-# git add hello.txt
+# git add hello.txt login.py
+# أو
+# git add .
+
+# اذا تريد تنتقل فرع ثاني بس ما تريد ترفع الملفات بعدك احفض التعديلات مؤقتا
+# git stash
+# بعد ما ترجع اعمل
+# git stash pop
 
 # الحفظ الرسمي Commit عمل 
 # رسالة تشرح نوع التغيير message اختصار لكلمة  = -m
@@ -113,14 +132,46 @@ committed            يعني: تم حفظ الملف رسميًا
 # ملاحظة اذا دمجت و فرع ثاني اراد يدمج و هو معدل نفس الاسطر الي انت عدلتهن راح يظهر تنبيه و يحتاج تختاروا بشكل يدوي
 # git merge feature-login
 
+# كيف أرجع لنسخة قديمة
+# git log --oneline
+# commit رقم الـ
+# git checkout ba87665
+# او
+# git switch --detach ba87665
+
+# القديم commitطرق الرجوع للـ
+# -- git reset --
+# و التعديلات و يقف على المختار commit يحذف الـ
+# git reset --hard B
+# commit يبقى تعمل git add و يحتفظ بالتعديلات كنك عامل commitيحذف الـ
+# git reset --soft HEAD~1
+# ولا يحذف التعديلات من الملف git add و الـ commit يحذف الـ
+# git reset --mixed HEAD~1 أو git reset HEAD~1
+# -- git revert --
+# سابق commit  لا يحذف التاريخ، بل ينشئ تعديل جديدًا من
+# المختار commit جديدًا من الـ commit بل ينشئ commit لا يحذف الـ 
+# git revert C
+
+# يمكن استرجاعه باستخدام reset باستخدام commit إذا حذفت
+# git reflog
+# ID ثم بالـ
+# git reset f6a7594  
+
+# خلنا نعمل مثال عملي على 
+# git revert HASH 
+
 
 # -------------------------------- GitHup مع Git اعدادات ربط ---------------------------------
 
 # vs code اكتب في
+# يعرض المجلد الحالي الذي تعمل بداخله
 # pwd
 
 # مثل GitHupالرابط الي اعطاك اياه الـ
 # git remote add origin https://github.com/s1j2b1/Git_learn.git
+
+# للتأكد
+# git remote -v
 
 # رفع المشروع لأول مرة
 # git push -u origin main
