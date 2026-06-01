@@ -82,7 +82,7 @@ committed            يعني: تم حفظ الملف رسميًا
 # أو
 # git add .
 
-# اذا تريد تنتقل فرع ثاني بس ما تريد ترفع الملفات بعدك احفض التعديلات مؤقتا
+# اذا تريد تنتقل فرع ثاني بس ما تريد ترفع الملفات بعدك احفظ التعديلات مؤقتا
 # git stash
 # بعد ما ترجع اعمل
 # git stash pop
@@ -169,11 +169,16 @@ committed            يعني: تم حفظ الملف رسميًا
 # GitHup ربط المشروع الحالي بمستودع
 # مثل GitHupالرابط الي اعطاك اياه الـ
 # git remote add origin https://github.com/s1j2b1/Git_learn.git
-# GitHup ربط الملف الحالي بمستودع مختلف في
+# GitHup اذا اردت ربط الملف الحالي بمستودع مختلف في
 # https://github.com/s1j2b1/Git_learn.git
+# origin: اختصار بدل يكتب الرابط كامل GitHup تعني المستودع على 
 
 # للتأكد باي مستودع مربوط
 # git remote -v
+
+# للتأكد مما سيرفع
+# git log --oneline origin/main..HEAD
+# طريقة ممتازة
 
 # رفع المشروع لأول مرة
 # git push -u origin main
