@@ -149,6 +149,16 @@ committed            يعني: تم حفظ الملف رسميًا
 # commit عرض التغييرات قبل عمل 
 # git diff
 
+# لحذف ملف من الفرع
+# git rm test.py
+# git commit -m "Remove test.py"
+
+# لحذف فرع
+# التي تم دمجها في فرع آخر commits طبعا حذف الفرع لا يعني حذف الـ
+# git branch -d branch-name
+# branch is not fully merged لم يتم دمجها commits اذا ظهرت رسالة يعني يوجد 
+# إذا كنت متأكدًا أنك تريد حذف بكل الاحوال
+# git branch -D branch-name
 
 # -------------------------------- GitHup مع Git اعدادات ربط ---------------------------------
 
