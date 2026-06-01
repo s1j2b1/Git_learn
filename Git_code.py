@@ -166,10 +166,13 @@ committed            يعني: تم حفظ الملف رسميًا
 # يعرض المجلد الحالي الذي تعمل بداخله
 # pwd
 
+# GitHup ربط المشروع الحالي بمستودع
 # مثل GitHupالرابط الي اعطاك اياه الـ
 # git remote add origin https://github.com/s1j2b1/Git_learn.git
+# GitHup ربط الملف الحالي بمستودع مختلف في
+# https://github.com/s1j2b1/Git_learn.git
 
-# للتأكد
+# للتأكد باي مستودع مربوط
 # git remote -v
 
 # رفع المشروع لأول مرة
