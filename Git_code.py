@@ -253,8 +253,16 @@ committed            يعني: تم حفظ الملف رسميًا
 # git push
 
 
+# -- Clone --
+# وتريد تنزيله كاملًا إلى جهازك GitHub الفكرة عندما ترى مشروعًا على 
+# (URL HTTPS رابط المستودع) بدل أن تنشئ مجلدًا وتنسخ الملفات يدويًا، تعمل
 
+# vs code terminal
+# cd C:\Users\Lenovo\Desktop\New_folder
 
+# git clone URL
+# افتح المشروع
+# cd ..
 
 
 
