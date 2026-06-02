@@ -163,6 +163,8 @@ committed            يعني: تم حفظ الملف رسميًا
 
 # -------------------------------- GitHup مع Git اعدادات ربط ---------------------------------
 
+# -- اعدادات ربط --
+
 # vs code اكتب في
 # يعرض المجلد الحالي الذي تعمل بداخله
 # pwd
@@ -183,7 +185,7 @@ committed            يعني: تم حفظ الملف رسميًا
 # رفع المشروع لأول مرة
 # git push -u origin main
 # المرات القادمة يكفي
-# git push
+# git push أو git push origin main
 
 # جلب التحديثات و دمجها في كودك
 # git pull --rebase origin main
@@ -203,6 +205,47 @@ committed            يعني: تم حفظ الملف رسميًا
 
 # اذا حصلة مشكلة اثناء جلب البيانات إلغاء عملية الدمج العالقة
 # git merge --abort
+
+# GitHub كيف أعرف إذا كنت متأخرًا عن 
+# git status
+# Your branch is behind 'origin/main' by 2 commits
+# GitHub إذا كنت متقدمًا على 
+# Your branch is ahead of 'origin/main' by 19 commits
+
+
+# -- Pull Request (PR) --
+# معناها أريد دمج هذا الفرع داخل فرع آخر، هل توافقون؟ GitHub ميزة في 
+# تبدأ العمل مع فريق PR مع
+# لاكن قبل الدمج يراجع شخص الكود ويوافق أو يطلب تعديلات GitHub فائدته من فرعك ترسل للـ
+# مراجعة الكود (Code Review) \ مناقشة التغييرات \ اختبارات تلقائية \ موافقات الفريق
+
+# PR عمل أول
+# انتقل إلى الفرع مثلا
+# git switch feature-login
+
+# ..أنشئ ملفًا جديدًا مثلا و اكتب فيه
+# github_pr.txt
+
+# احفظ التعديل
+# git add github_pr.txt
+# git commit -m "Add PR example"
+
+# GitHub رفع الفرع إلى 
+# git push -u origin feature-login
+
+# GitHub من مستودعك على 
+
+# سيظهر شريط أصفر أو أخضر فيه
+# Compare & pull request
+# ثم 
+# Create Pull Request
+# ثم 
+# Merge Pull Request
+# ثم
+# Confirm Merge
+# بعدها اذا انتهت مهمة الفرع
+# Delete branch
+
 
 
 
